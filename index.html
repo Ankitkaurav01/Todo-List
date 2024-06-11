@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo-list</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="main">
+    <div class="total">
      <h1 class="top">Create To Do</h1>
 
      <div class="todo">
          <div>
-            <input type=" text" placeholder="Enter your task" class="task">
+            <input type=" text" placeholder="Enter your task" class="task" >
          </div>
 
-         <select name="" id="" class="taskStatus">
+         <select name="" id="" class="taskStatus" >
             <option value="To-Do">To-Do</option>
             <option value="In-Progress">In-Progress</option>
             <option value="Done">Done</option>
@@ -24,8 +26,8 @@
          <button class="btn">Add Task</button>
      </div>
 
-     <h1 class="top">All added to do List</h1>
-     <hr>
+     <h1 class="top">Added to do List</h1>
+    
 
      <div class="list">
         <div>
@@ -35,9 +37,15 @@
           <div id="status">
               task status,
           </div>
+          <div>
+            <i class="ri-pencil-line"></i>
+            &NonBreakingSpace;
+            <i class="ri-delete-bin-6-line"></i>
+          </div>
        </div>
      </div>
-
+     <hr class="hr">
+    </div>
 </div>
     <script src="style.js"></script>
 </body>
